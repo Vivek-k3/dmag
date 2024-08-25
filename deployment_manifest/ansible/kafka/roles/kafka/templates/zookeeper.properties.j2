@@ -1,0 +1,26 @@
+# The directory where the snapshot is stored.
+dataDir={{ zookeeper_data_dir }}
+
+# The port at which the clients will connect.
+clientPort=2181
+
+# The maximum number of client connections.
+maxClientCnxns=60
+
+# The basic time unit in milliseconds used by ZooKeeper.
+tickTime=2000
+
+# The number of ticks that the initial synchronization phase can take.
+initLimit=5
+
+# The number of ticks that can pass between sending a request and getting an acknowledgment.
+syncLimit=2
+
+# ZooKeeper ensemble configuration
+server.1=zookeeper1:2888:3888
+server.2=zookeeper2:2888:3888
+server.3=zookeeper3:2888:3888
+
+# Enable autopurge of old snapshots and logs to prevent disk space issues
+autopurge.snapRetainCount=3
+autopurge.purgeInterval=24

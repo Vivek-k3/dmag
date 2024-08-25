@@ -1,0 +1,5 @@
+broker.id={{ ansible_host | regex_replace('[^0-9]', '') }}
+log.dirs={{ kafka_data_dir }}
+zookeeper.connect=zookeeper1:2181,zookeeper2:2181,zookeeper3:2181
+listeners=PLAINTEXT://{{ ansible_host }}:9092
+log.retention.hours=168

@@ -1,0 +1,11 @@
+- hosts: all
+  roles:
+    - common
+
+- hosts: zookeeper
+  roles:
+    - zookeeper
+
+- hosts: kafka
+  roles:
+    - kafka

@@ -1,0 +1,9 @@
+[kafka]
+kafka1 ansible_host=192.168.1.101
+kafka2 ansible_host=192.168.1.102
+kafka3 ansible_host=192.168.1.103
+
+[zookeeper]
+zookeeper1 ansible_host=192.168.1.201
+zookeeper2 ansible_host=192.168.1.202
+zookeeper3 ansible_host=192.168.1.203

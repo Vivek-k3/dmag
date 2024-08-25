@@ -1,0 +1,12 @@
+{
+  "name": "ai",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "requirements": "pip install -r requirements.txt",
+    "install": "pip install -r requirements.txt"
+  }
+}
